@@ -1,0 +1,329 @@
+/* Global CSS */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { background-color:#eee; padding:0; margin:0;
+font-family: "quicksand","montserrat","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* Controlling the slide effect */
+
+#menu {
+
+}
+
+#menu.active {
+
+}
+
+.menu-link {
+
+}
+
+.container {
+
+}
+
+.container.active {
+
+}
+
+/* Slider effect - save for last and will be shown in class */
+
+
+/* Styling */
+
+/* MENU - Global */
+
+li.current, li.current a, li.current a:active {  }
+
+a {
+
+  }
+
+ul { 
+
+}
+
+
+#transparent_layer { height:25px; background-color:transparent; width:35px; position:relative; top:-10px } /*Click area for invisible field for mobile menu*/
+
+#menu-link-icon, #menu-link-icon:after, #menu-link-icon:before {
+     position:absolute;
+     width:35px;
+     height:5px;
+     background:black;
+     border-radius:20px;
+}
+#menu-link-icon {
+     display:block;
+     text-indent:-999em;
+     top:25px;
+}
+#menu-link-icon:after, #menu-link-icon:before {
+     content:"\00a0";
+     left:0;
+}
+#menu-link-icon:before {
+     top:-10px;
+}
+#menu-link-icon:after {
+     top:10px;
+}
+
+/* MENU - Desktop */
+
+#desktop_menu {
+    height: 97px;
+    width: 100%;
+    background-color: #373c3f;
+}
+
+#desktop_menu ul {
+    float: left;
+    color: #ebebeb;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+#desktop_menu ul:first-child {
+    margin-left: 40px;
+}
+
+#desktop_menu li {
+    list-style: none;
+}
+
+#desktop_menu li a {
+
+}
+
+#desktop_menu li + li {
+
+}
+
+
+/* MENU - mobile */
+
+nav#menu { }
+nav#menu ul { }
+nav#menu li {  }
+nav#menu li a {   }
+nav#menu li:hover {  }
+nav#menu li a:hover, #desktop_menu li a:hover {   }
+nav#menu li a:active, #desktop_menu li a:active {  }
+
+/* Top area CSS */
+
+.top {  }
+
+/* Banner area CSS */
+.banner h2 {
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.banner h3 { }
+#banner_click {   }
+.banner {
+    height: 550px;
+    width: 100%;
+    background: #19b4c6; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #19b4c6 0%, #078aa4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #19b4c6 0%,#078aa4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #19b4c6 0%,#078aa4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19b4c6', endColorstr='#078aa4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#banner_text {
+    width: 100%;
+    margin-left: 80px;
+    padding-top: 192px;
+}
+
+#bot_text {
+    margin-top: 50px;
+}
+
+    #bot_text h3 {
+        float: left;
+    }
+
+    #bot_text h3:first-child {
+        color: #a6d6df;
+        font-size: 40px;
+    }
+
+    #bot_text h3:last-child {
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 236px;
+    }
+
+/* Info area CSS */
+
+.info_box {
+    height: 234px;
+    width: 100%;
+}
+
+.info_left {
+    width: 77.8%;
+    height: 234px;
+    background-color: #27212c;
+    float: left;
+    font-size: 25px;
+    color: #9282a0;
+    /*Internet explorer 10*/
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /*Firefox*/
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /*Safari, Opera and Chrome*/
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /*W3C*/
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.info_right {
+    width: 22.2%;
+    height: 234px;
+    background-color: #bc3183;
+    float: left;
+    font-size: 35px;
+    color: #ffffff;
+    /*Internet explorer 10*/
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /*Firefox*/
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /*Safari, Opera and Chrome*/
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /*W3C*/
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+/* Three_box area CSS */
+
+.three_box {
+width: 100%;
+}
+
+.three_left {
+    float: left;
+    width: 33.3%;
+}
+
+.three_mid {
+    float: left;
+    width: 33.3%;
+}
+
+.three_mid img, .three_right img, .three_left img{
+    height: auto;
+    width: 100%;
+}
+
+.three_right {
+    float: left;
+    width: 33.3%;
+}
+
+#clear {
+    clear: both;
+}
+
+/* Footer area CSS */
+
+.footer {
+    height: 355px;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+#text_holder {
+    -webkit-column-count: 2;
+    margin: 32px 79px 0 79px;
+}
+
+.footer_text {   }
+.footer h2 {
+margin: 50px 0 0 79px;
+    color: #088ca5;
+}
+.footer p {   }
+
+
+/* Media Query section */ 
+@media all and (max-width: 640px) {
+   
+    .top  {   }
+   
+    #menu {  }
+    nav#desktop_menu {
+        height: 72px;
+    }
+    nav#desktop_menu li {
+        display: none;
+    }
+
+    .banner {
+    height: 348px;
+    }
+    .banner h2 {
+    font-size: 20px;
+    }
+    #banner_text {
+        margin-left: 0;
+        padding-left: 51px;
+        padding-top: 115px;
+        padding-right: 137px;
+    }
+    #bot_text h3:first-child {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    #bot_text h3:last-child {
+        color: #ffffff;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    #banner_click {  }
+    
+    .info_box, .info_left, .info_right {
+        height: 194px;
+    }
+    .info_left {
+        font-size: 18px
+    }
+    .info_right {   }
+
+    .three_mid, .three_right, .three_left {
+        height: auto;
+        width: 100%;
+    }
+        
+    .footer_text {   }
+}
+

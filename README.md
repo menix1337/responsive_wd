@@ -1,2 +1,2 @@
-# responsive_wd
-Responsive webdesign
+# RWD_responsive
+Responsive testing
